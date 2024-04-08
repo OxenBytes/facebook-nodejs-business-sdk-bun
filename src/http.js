@@ -10,6 +10,7 @@
 import Api from './api';
 import HTTP_STATUS from './http-status';
 const axios = require("axios");
+axios.defaults.headers.common["Accept-Encoding"] = "gzip";
 
 /**
  * Isomorphic Http Promise Requests Class
